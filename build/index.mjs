@@ -314,7 +314,7 @@ var ScrollMenu = exports.ScrollMenu = function (_React$Component2) {
       stopDragTranslate: null
     };
 
-    _this3.setInitial = function () {
+    _this3.setUpInitial = function () {
       var _this3$props = _this3.props,
           selected = _this3$props.selected,
           data = _this3$props.data;
@@ -771,6 +771,7 @@ var ScrollMenu = exports.ScrollMenu = function (_React$Component2) {
     };
 
     _this3.ref = {};
+    _this3.setInitial = _this3.setUpInitial.bind(_this3);
     return _this3;
   }
 

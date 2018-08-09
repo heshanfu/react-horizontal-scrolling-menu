@@ -147,6 +147,7 @@ export class ScrollMenu extends React.Component {
   constructor(props) {
     super(props);
     this.ref = {};
+    this.setInitial = this.setUpInitial.bind(this);
   }
 
   state = {
@@ -204,7 +205,7 @@ export class ScrollMenu extends React.Component {
     document.removeEventListener('mouseup', this.handleDragStop);
   }
 
-  setInitial = () => {
+  setUpInitial = () => {
     const { selected, data } = this.props;
     if (!data || !data.length) return false;
 
